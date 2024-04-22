@@ -34,9 +34,9 @@ bot.on('text', async (ctx) => {
   });
 
   let data = await response.json();
-  let assistantMessage = data.messages[0].content;
+  let assistantMessage = data.messages && data.messages[0] ? data.messages[0].content : 'Error retrieving message';
 
-  switch (data.messages[0].role) {
+  switch (data.messages && data.messages[0] ? data.messages[0].role : '') {
     case 'user':
       ctx.reply(assistantMessage);
       break;
