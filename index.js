@@ -1,8 +1,8 @@
 const { Telegraf } = require('telegraf');
 const fetch = require('node-fetch');
 
-const TELEGRAM_BOT_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN';
-const API_KEY = 'YOUR_API_KEY'; // Ganti dengan API key Anda
+const TELEGRAM_BOT_TOKEN = '7169148449:AAFogjpEeT72NPq4X7rmxQqtJa4wbvBPrXo';
+const API_KEY = 'yudamodz'; // Ganti dengan API key Anda
 
 const bot = new Telegraf(TELEGRAM_BOT_TOKEN);
 
